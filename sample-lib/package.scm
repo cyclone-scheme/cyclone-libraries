@@ -6,3 +6,5 @@
 (license "MIT")
 (groups)
 (depends)
+(conflicts)
+(replaces)
