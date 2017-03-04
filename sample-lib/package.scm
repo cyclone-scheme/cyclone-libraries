@@ -8,3 +8,11 @@
 (depends)
 (conflicts)
 (replaces)
+;; List of files to compile and install
+(files '(cyclone sample.sld))
+;; Custom install commands
+(install "")
+;; Custom uninstall commands
+(uninstall "")
+;; Test files to build and execute
+(tests '(tests test.scm))
