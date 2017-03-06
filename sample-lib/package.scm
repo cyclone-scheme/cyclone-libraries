@@ -16,6 +16,7 @@
 (install "echo 'install cmd 1'"
          "echo 'install cmd 2'")
 ;; Custom uninstall commands
-(uninstall "")
+(uninstall "echo 'uninstall cmd 1'"
+           "echo 'uninstall cmd 2'")
 ;; Test files to build and execute
 (tests (tests test.scm))
