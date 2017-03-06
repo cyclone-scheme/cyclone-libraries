@@ -19,4 +19,4 @@
 (uninstall "echo 'uninstall cmd 1'"
            "echo 'uninstall cmd 2'")
 ;; Test files to build and execute
-(tests (tests test.scm))
+(test "cyclone tests/test.scm && ./tests/test.scm")
