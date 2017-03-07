@@ -8,13 +8,19 @@
 (depends)
 (conflicts)
 (replaces)
-;; List of files to compile and install
-;; Can list each filename as a string (EG: "cyclone/sample.sld)
-;; or as the installed library name (sld files only)
-(files "main.scm" (cyclone sample) #;"noone.scm")
-;; Custom install commands
-(install "echo 'install cmd 1'"
-         "echo 'install cmd 2'")
+(build
+  "cyclone main.scm"
+  "cyclone cyclone/sample.sld")
+
+(install 
+  "mkdir -p ~DESTDIR~/bin"
+  "install -m0755 main ~DESTDIR~/bin"
+  "mkdir -p ~DESTDIR~/~LIB~/cyclone"
+  "install -m0644 cyclone/sample.sld ~DESTDIR~/~LIB~/cyclone"
+  "install -m0644 cyclone/sample.o ~DESTDIR~/~LIB~/cyclone"
+  "install -m0644 cyclone/sample.meta ~DESTDIR~/~LIB~/cyclone"
+  )
+
 ;; Custom uninstall commands
 (uninstall "echo 'uninstall cmd 1'"
            "echo 'uninstall cmd 2'")
