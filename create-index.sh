@@ -1,10 +1,11 @@
 #!/bin/bash
 
 #REPODIR=../repo
-REPODIR=repo
+REPODIR=_packages
 INDEX=${REPODIR}/index.dat
 mkdir -p $REPODIR
 rm -f ${INDEX}
+rm -f ${REPODIR}/*.gz
 touch ${INDEX}
 
 for D in *; do
