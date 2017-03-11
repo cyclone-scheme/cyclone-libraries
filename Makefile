@@ -1,9 +1,9 @@
-all: get-ver packages
+all: query-pkg packages
 
-get-ver: get-ver.scm
-	cyclone get-ver.scm
+query-pkg: query-pkg.scm
+	cyclone query-pkg.scm
 
 .PHONY: all packages
 
-packages: get-ver
+packages: query-pkg
 	./create-index.sh

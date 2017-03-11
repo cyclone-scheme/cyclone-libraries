@@ -2,6 +2,12 @@
 (call-with-input-file
   (car (command-line-arguments))
   (lambda (fp)
-    (write 
-      (cadr 
-        (assoc 'ver (read-all fp))))))
+    (cond 
+      ((= (length (command-line-arguments)) 2)
+       (write 
+         (cadr 
+           (assoc 'ver (read-all fp)))))
+      (else
+       (write 
+         (read-all fp)))
+      )))

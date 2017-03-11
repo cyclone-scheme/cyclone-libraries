@@ -9,7 +9,7 @@ touch ${INDEX}
 
 for D in *; do
     if [ -d "${D}" ] && [ "${D}" != "${REPODIR}" ]; then
-        VERSION=`./get-ver "${D}"/package.scm`
+        VERSION=`./query-pkg "${D}"/package.scm ver`
         tar -cf "${D}".tar "${D}" && gzip -f "${D}".tar
         mv "${D}".tar.gz ${REPODIR}/"${D}"-"${VERSION}".tar.gz
         echo "( ${D} ${VERSION} ${D}-${VERSION}.tar.gz )" >> ${INDEX}
