@@ -21,13 +21,15 @@
   "mkdir -p ~BIN~"
   "install -m0755 main ~BIN~/"
   "mkdir -p ~DATA~/cyclone"
-  "install -m0644 cyclone/sample.so ~DATA~/cyclone"
+  "install -m0644 cyclone/sample.o ~DATA~/cyclone"
+  "install -m0755 cyclone/sample.so ~DATA~/cyclone"
   "install -m0644 cyclone/sample.meta ~DATA~/cyclone"
   "install -m0644 cyclone/sample.sld ~DATA~/cyclone")
 
 ;; Custom uninstall commands
 (uninstall 
   "rm -f ~BIN~/main"
+  "rm -f ~DATA~/cyclone/sample.o"
   "rm -f ~DATA~/cyclone/sample.so"
   "rm -f ~DATA~/cyclone/sample.meta"
   "rm -f ~DATA~/cyclone/sample.sld")
