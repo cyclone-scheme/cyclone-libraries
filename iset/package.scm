@@ -9,11 +9,11 @@
 (conflicts)
 (replaces)
 (build
- "cyclone cyclone/iset/base.sld"
- "cyclone cyclone/iset/constructors.sld"
- "cyclone cyclone/iset/iterators.sld"
- "cyclone cyclone/iset/optimize.sld"
- "cyclone cyclone/iset.sld")
+ "cyclone -A . cyclone/iset/base.sld"
+ "cyclone -A . cyclone/iset/constructors.sld"
+ "cyclone -A . cyclone/iset/iterators.sld"
+ "cyclone -A . cyclone/iset/optimize.sld"
+ "cyclone -A . cyclone/iset.sld")
 
 ;; There are several aliases used in the next 2 directives:
 ;; ~BIN~  - Directory for binaries
