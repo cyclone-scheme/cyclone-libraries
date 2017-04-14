@@ -1,8 +1,8 @@
 (import (scheme base)
         (scheme write)
         (except (srfi 1) make-list list-copy)        
-        (scheme cyclone iset)
-        (scheme cyclone iset optimize)
+        (cyclone iset)
+        (cyclone iset optimize)
         (scheme cyclone test))
 
 (define (run-tests)
