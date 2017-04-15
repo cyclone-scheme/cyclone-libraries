@@ -1,5 +1,5 @@
 ;; Package information for the library
-(name    "iset")
+(name    "string")
 (desc    "Chibi's cursor-oriented string library")
 (ver     0.1)
 (rel     1)
