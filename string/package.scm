@@ -9,7 +9,7 @@
 (conflicts)
 (replaces)
 (build
- "cyclone cyclone/string.sld")
+ "cyclone -A . cyclone/string.sld")
 
 ;; There are several aliases used in the next 2 directives:
 ;; ~BIN~  - Directory for binaries
