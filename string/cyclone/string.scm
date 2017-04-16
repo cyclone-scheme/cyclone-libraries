@@ -359,7 +359,7 @@
 ;;>
 ;;> Returns a string cursor pointing to the start of \var{str}.
 
-(define string-cursor-ref string-ref)
+(define (string-cursor-start s) 0)
 
 ;;> \procedure{(string-cursor-end str)}
 ;;>
