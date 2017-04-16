@@ -9,12 +9,12 @@
 (conflicts)
 (replaces)
 (build
- "cyclone cyclone/char-set/base.sld"
- "cyclone cyclone/char-set/ascii.sld"
- "cyclone cyclone/char-set/full.sld"
- "cyclone cyclone/char-set/boundary.sld"
- "cyclone cyclone/char-set/extras.sld"
- "cyclone cyclone/char-set.sld")
+ "cyclone -A . cyclone/char-set/base.sld"
+ "cyclone -A . cyclone/char-set/ascii.sld"
+ "cyclone -A . cyclone/char-set/full.sld"
+ "cyclone -A . cyclone/char-set/boundary.sld"
+ "cyclone -A . cyclone/char-set/extras.sld"
+ "cyclone -A . cyclone/char-set.sld")
 
 ;; There are several aliases used in the next 2 directives:
 ;; ~BIN~  - Directory for binaries
