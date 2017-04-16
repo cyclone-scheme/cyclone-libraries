@@ -5,7 +5,7 @@
 (rel     1)
 (license "BSD")
 (groups)
-(depends)
+(depends char-set)
 (conflicts)
 (replaces)
 (build
