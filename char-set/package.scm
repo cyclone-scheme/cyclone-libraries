@@ -23,6 +23,7 @@
 ;; ~INCLUDE~ - Directory for C headers (not normally used)
 (install 
  "mkdir -p ~DATA~/cyclone/char-set"
+ "install -m0644 cyclone/char-set/*.scm ~DATA~/cyclone/char-set"
  "install -m0644 cyclone/char-set/base.o ~DATA~/cyclone/char-set"
  "install -m0644 cyclone/char-set/base.so ~DATA~/cyclone/char-set"
  "install -m0644 cyclone/char-set/base.meta ~DATA~/cyclone/char-set"
@@ -50,6 +51,7 @@
 
 ;; Custom uninstall commands
 (uninstall
+ "rm -f ~DATA~/cyclone/char-set/*.scm"
  "rm -f ~DATA~/cyclone/char-set/base.o"
  "rm -f ~DATA~/cyclone/char-set/base.so"
  "rm -f ~DATA~/cyclone/char-set/base.meta"
