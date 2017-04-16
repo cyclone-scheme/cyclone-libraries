@@ -5,7 +5,7 @@
 (rel     1)
 (license "BSD")
 (groups)
-(depends)
+(depends iset)
 (conflicts)
 (replaces)
 (build
