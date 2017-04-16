@@ -1,6 +1,7 @@
 (import (scheme base)
         (scheme write)
-        (cyclone test)
+        (scheme char)
+        (scheme cyclone test)
         (cyclone string))
 
 (define (digit-value ch)
